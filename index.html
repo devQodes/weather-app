@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7b0ebc6c49.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="id">
+      <div class="center-screen">
+        <div class="body container">
+          <div class="form-container row">
+            <form class="search-form row col-10">
+              <input
+                class="col-8"
+                type="text"
+                id="city-input"
+                placeholder="City"
+              />
+              <input class="col-4" type="submit" id="search-button" />
+            </form>
+            <button class="col-2" id="current-button">Current</button>
+          </div>
+          <div class="section-1 container">
+            <div class="section-1 row align-items-center">
+              <div class="col-7">
+                <div class="current city">Sample City</div>
+                <div id="day-time">
+                  Jan 15, 2022
+                  <br /><br />
+                </div>
+                <div class="current-weather row">
+                  <i class="fa-solid fa-cloud current weather emoji col"></i>
+                </div>
+                <div class="weather-description col"><em>Cloudy</em></div>
+              </div>
+              <div class="col-5 text-center">
+                <div class="current temp">0°C</div>
+                <div class="temp-options">
+                  <a href="#" id="celsius">°Celsius</a>
+                  <span id="temp-divider">|</span>
+                  <a href="#" id="fahrenheit">°Farenheit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="section-2 row text-center">
+            <div class="day col">
+              <div class="day container">
+                <div class="day">Mon</div>
+                <i class="fa-solid fa-cloud-sun day weather emoji"></i>
+                <div class="temp">25°C</div>
+              </div>
+            </div>
+            <div class="day col">
+              <div class="day container">
+                <div class="day">Tue</div>
+                <i class="fa-solid fa-sun day weather emoji"></i>
+                <div class="temp">26°C</div>
+              </div>
+            </div>
+            <div class="day col">
+              <div class="day container">
+                <div class="day">Wed</div>
+                <i class="fa-solid fa-cloud day weather emoji"></i>
+                <div class="temp">22°C</div>
+              </div>
+            </div>
+            <div class="day col">
+              <div class="day container">
+                <div class="day">Thu</div>
+                <i
+                  class="fa-solid fa-cloud-showers-heavy day weather emoji"
+                ></i>
+                <div class="temp">21°C</div>
+              </div>
+            </div>
+            <div class="day col">
+              <div class="day container">
+                <div class="day">Fri</div>
+                <i class="fa-solid fa-cloud-bolt day weather emoji"></i>
+                <div class="temp">19°C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

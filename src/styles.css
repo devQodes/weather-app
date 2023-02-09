@@ -1,0 +1,127 @@
+* {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.4) 7px 7px 7px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/week-2/img/bg.jpg");
+  background-size: cover;
+}
+
+.body.container {
+  margin: 0 auto;
+  align-items: center;
+  max-width: 800px;
+  height: 580px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 16px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border-radius: 30px;
+}
+
+/* #search-form {
+  width: fit-content;
+} */
+
+#city-input {
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  padding: 10px;
+  color: #000;
+}
+
+#search-button {
+  background-color: #5c6668;
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  border: none;
+}
+
+#current-button {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+  margin-left: 25px;
+  margin-right: 0;
+  padding: 10px;
+  border: 1px #5c6668 solid;
+  color: #000;
+}
+.current.city {
+  font-size: 50px;
+}
+.current.day-time {
+  font-size: 20px;
+}
+.weather-description {
+  font-size: 20px;
+}
+
+.current.temp {
+  font-size: 100px;
+  transition: all 200ms ease-in-out;
+}
+
+.current.temp:hover {
+  background-color: #ffffff36;
+
+  border-radius: 16px;
+}
+
+#celsius,
+#fahrenheit,
+#temp-divider {
+  font-size: 20px;
+  color: #fff;
+}
+
+.current.weather.emoji {
+  font-size: 70px;
+  text-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.current.weather.emoji:hover {
+  color: #5c6668;
+  cursor: pointer;
+}
+
+.section-1.container {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.day.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.day {
+  font-size: 18px;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.day.container > .temp {
+  font-size: 24px;
+}
+
+.day.weather.emoji {
+  font-size: 40px;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+.day.weather.emoji:hover {
+  color: #5c6668;
+  cursor: pointer;
+}
