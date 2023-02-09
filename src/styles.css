@@ -5,7 +5,7 @@
   font-weight: lighter;
 }
 .center-screen {
-  display: flex;
+  padding-top: 5%;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -19,6 +19,7 @@
   max-width: 800px;
   height: 580px;
   padding: 50px;
+
   background: rgba(255, 255, 255, 0.051);
   border-radius: 16px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
@@ -26,10 +27,6 @@
   -webkit-backdrop-filter: blur(8.3px);
   border-radius: 30px;
 }
-
-/* #search-form {
-  width: fit-content;
-} */
 
 #city-input {
   margin-left: 0;
@@ -123,5 +120,21 @@
 }
 .day.weather.emoji:hover {
   color: #5c6668;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+#footer-link {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 200ms ease-in-out;
+}
+
+#footer-link:hover {
+  color: #f3bd80;
   cursor: pointer;
 }
